@@ -66,7 +66,7 @@
                                     <constraint firstItem="Jon-NF-M4U" firstAttribute="top" secondItem="7xM-KQ-rGX" secondAttribute="top" constant="15" id="zui-y3-Oez"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="og9-QG-d0k">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="og9-QG-d0k" userLabel="Layout Stack View">
                                 <rect key="frame" x="86.5" y="751" width="241" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVq-sA-1Uu">

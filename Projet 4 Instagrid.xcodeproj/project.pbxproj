@@ -56,15 +56,47 @@
 		B4A1CD2A28698A17002C5A99 /* Projet 4 Instagrid */ = {
 			isa = PBXGroup;
 			children = (
-				B4A1CD2B28698A17002C5A99 /* AppDelegate.swift */,
-				B4A1CD2D28698A17002C5A99 /* SceneDelegate.swift */,
-				B4A1CD2F28698A17002C5A99 /* ViewController.swift */,
-				B4A1CD3128698A17002C5A99 /* Main.storyboard */,
-				B4A1CD3428698A18002C5A99 /* Assets.xcassets */,
-				B4A1CD3628698A18002C5A99 /* LaunchScreen.storyboard */,
-				B4A1CD3928698A18002C5A99 /* Info.plist */,
+				B4A1CD7528699DF6002C5A99 /* Model */,
+				B4A1CD7728699E22002C5A99 /* View */,
+				B4A1CD7928699E38002C5A99 /* Controller */,
+				B4A1CD7A28699EB1002C5A99 /* Supporting Files */,
 			);
 			path = "Projet 4 Instagrid";
+			sourceTree = "<group>";
+		};
+		B4A1CD7528699DF6002C5A99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4A1CD7728699E22002C5A99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4A1CD3128698A17002C5A99 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4A1CD7928699E38002C5A99 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4A1CD2F28698A17002C5A99 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4A1CD7A28699EB1002C5A99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4A1CD3928698A18002C5A99 /* Info.plist */,
+				B4A1CD3428698A18002C5A99 /* Assets.xcassets */,
+				B4A1CD3628698A18002C5A99 /* LaunchScreen.storyboard */,
+				B4A1CD2D28698A17002C5A99 /* SceneDelegate.swift */,
+				B4A1CD2B28698A17002C5A99 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -270,6 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -289,10 +323,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 72U49V2JT8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Projet 4 Instagrid/Info.plist";
+				INFOPLIST_FILE = "Projet 4 Instagrid/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +352,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 72U49V2JT8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Projet 4 Instagrid/Info.plist";
+				INFOPLIST_FILE = "Projet 4 Instagrid/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
