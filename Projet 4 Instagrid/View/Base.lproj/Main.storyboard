@@ -91,6 +91,7 @@
                                     <constraint firstAttribute="trailing" secondItem="Jon-NF-M4U" secondAttribute="trailing" constant="15" id="7ua-V0-wye"/>
                                     <constraint firstItem="Jon-NF-M4U" firstAttribute="leading" secondItem="7xM-KQ-rGX" secondAttribute="leading" constant="15" id="dJ7-Vn-oSQ"/>
                                     <constraint firstAttribute="bottom" secondItem="Jon-NF-M4U" secondAttribute="bottom" constant="15" id="h7V-SV-4Ay"/>
+                                    <constraint firstAttribute="width" secondItem="7xM-KQ-rGX" secondAttribute="height" multiplier="1:1" id="j6n-nY-4wA"/>
                                     <constraint firstItem="Jon-NF-M4U" firstAttribute="top" secondItem="7xM-KQ-rGX" secondAttribute="top" constant="15" id="zui-y3-Oez"/>
                                 </constraints>
                             </view>
@@ -133,7 +134,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.73725497719999999" green="0.8392156959" blue="0.88627451660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="7xM-KQ-rGX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6jZ-Cv-zvP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="og9-QG-d0k" secondAttribute="bottom" constant="35" id="9gm-AM-0SY"/>
                             <constraint firstItem="7xM-KQ-rGX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="217" id="DHa-dr-zXE"/>
                             <constraint firstItem="7xM-KQ-rGX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Dcw-Xg-QrG"/>
