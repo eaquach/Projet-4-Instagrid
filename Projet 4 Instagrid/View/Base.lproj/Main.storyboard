@@ -6,6 +6,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Delm-Medium.otf">
+            <string>Delm-Medium</string>
+        </array>
+        <array key="ThirstySoftRegular.otf">
+            <string>ThirstySoftRegular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -15,6 +23,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="w54-LC-lQg">
+                                <rect key="frame" x="114.5" y="162.5" width="185" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="5mO-36-a6i">
+                                        <rect key="frame" x="85.5" y="0.0" width="14" height="10.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to share" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXz-Oo-wQY">
+                                        <rect key="frame" x="0.0" y="26.5" width="185" height="33.5"/>
+                                        <fontDescription key="fontDescription" name="Delm-Medium" family="Delm" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLg-n7-Oyg">
+                                <rect key="frame" x="118" y="76" width="178" height="58.5"/>
+                                <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xM-KQ-rGX" userLabel="Picture View">
                                 <rect key="frame" x="20" y="261" width="374" height="374"/>
                                 <subviews>
@@ -24,34 +52,34 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="XCI-0n-2yU" userLabel="Top Stack View">
                                                 <rect key="frame" x="0.0" y="0.0" width="344" height="164.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFM-sj-hKw">
+                                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFM-sj-hKw">
                                                         <rect key="frame" x="0.0" y="0.0" width="164.5" height="164.5"/>
                                                         <color key="backgroundColor" red="0.99607843159999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="Plus"/>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOF-rl-Efd">
+                                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOF-rl-Efd">
                                                         <rect key="frame" x="179.5" y="0.0" width="164.5" height="164.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="Plus"/>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="AWz-ph-nkl" userLabel="Bottom Stack View">
                                                 <rect key="frame" x="0.0" y="179.5" width="344" height="164.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndQ-Y6-4o1">
+                                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndQ-Y6-4o1">
                                                         <rect key="frame" x="0.0" y="0.0" width="164.5" height="164.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="Plus"/>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95q-UL-1ny">
+                                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95q-UL-1ny">
                                                         <rect key="frame" x="179.5" y="0.0" width="164.5" height="164.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="Plus"/>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -66,23 +94,38 @@
                                     <constraint firstItem="Jon-NF-M4U" firstAttribute="top" secondItem="7xM-KQ-rGX" secondAttribute="top" constant="15" id="zui-y3-Oez"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="og9-QG-d0k" userLabel="Layout Stack View">
-                                <rect key="frame" x="86.5" y="751" width="241" height="31"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="og9-QG-d0k" userLabel="Layout Stack View">
+                                <rect key="frame" x="58" y="751" width="298" height="76"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVq-sA-1Uu">
-                                        <rect key="frame" x="0.0" y="0.0" width="67" height="31"/>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVq-sA-1Uu">
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="NVq-sA-1Uu" secondAttribute="height" multiplier="1:1" id="kq0-7Z-MiB"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="Layout 1"/>
+                                        </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgy-77-RmD">
-                                        <rect key="frame" x="87" y="0.0" width="67" height="31"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgy-77-RmD">
+                                        <rect key="frame" x="111" y="0.0" width="76" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Jgy-77-RmD" secondAttribute="height" multiplier="1:1" id="KSV-4J-K9t"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="Layout 2"/>
+                                        </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziK-8n-Fkz">
-                                        <rect key="frame" x="174" y="0.0" width="67" height="31"/>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziK-8n-Fkz">
+                                        <rect key="frame" x="222" y="0.0" width="76" height="76"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ziK-8n-Fkz" secondAttribute="height" multiplier="1:1" id="dtP-CX-bCq"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="Layout 3"/>
+                                        </buttonConfiguration>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -91,11 +134,19 @@
                         <color key="backgroundColor" red="0.73725497719999999" green="0.8392156959" blue="0.88627451660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="7xM-KQ-rGX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6jZ-Cv-zvP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="og9-QG-d0k" secondAttribute="bottom" constant="80" id="9gm-AM-0SY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="og9-QG-d0k" secondAttribute="bottom" constant="35" id="9gm-AM-0SY"/>
                             <constraint firstItem="7xM-KQ-rGX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="217" id="DHa-dr-zXE"/>
                             <constraint firstItem="7xM-KQ-rGX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Dcw-Xg-QrG"/>
+                            <constraint firstItem="w54-LC-lQg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JMq-3W-Rkb"/>
+                            <constraint firstItem="w54-LC-lQg" firstAttribute="top" secondItem="LLg-n7-Oyg" secondAttribute="bottom" constant="28" id="K2K-lD-uQ1"/>
                             <constraint firstItem="og9-QG-d0k" firstAttribute="centerX" secondItem="7xM-KQ-rGX" secondAttribute="centerX" id="MqW-Lm-cZE"/>
+                            <constraint firstItem="og9-QG-d0k" firstAttribute="top" secondItem="7xM-KQ-rGX" secondAttribute="bottom" constant="116" id="Nmx-H5-toV"/>
                             <constraint firstItem="7xM-KQ-rGX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="QIT-ht-IoK"/>
+                            <constraint firstItem="7xM-KQ-rGX" firstAttribute="top" secondItem="w54-LC-lQg" secondAttribute="bottom" constant="38.5" id="XHn-wJ-Rgk"/>
+                            <constraint firstItem="7xM-KQ-rGX" firstAttribute="centerX" secondItem="LLg-n7-Oyg" secondAttribute="centerX" id="eYW-ed-Tn1"/>
+                            <constraint firstItem="og9-QG-d0k" firstAttribute="top" secondItem="7xM-KQ-rGX" secondAttribute="bottom" constant="116" id="l26-N7-lej"/>
+                            <constraint firstItem="7xM-KQ-rGX" firstAttribute="top" secondItem="w54-LC-lQg" secondAttribute="bottom" constant="38.5" id="lUC-DJ-22n"/>
+                            <constraint firstItem="LLg-n7-Oyg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="zyU-b9-iqb"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -104,4 +155,11 @@
             <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Arrow Up" width="14" height="10"/>
+        <image name="Layout 1" width="80" height="80"/>
+        <image name="Layout 2" width="80" height="80"/>
+        <image name="Layout 3" width="80" height="80"/>
+        <image name="Plus" width="40" height="40"/>
+    </resources>
 </document>
